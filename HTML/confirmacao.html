@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancelamento</title>
+
+    <link rel="stylesheet" href="../CSS/css_geral.css" />
+    <link rel="stylesheet" href="../CSS/layout.css" />
+    <link
+      rel="stylesheet"
+      href="../CSS/estilo_cada_pagina/confirmacao.css"
+    />
+
+    <script src="../scripts/script.js" defer></script>
+    <!--  <script src="./scripts/app.js" defer></script> -->
+  </head>
+
+  <body>
+    <div id="geral">
+      <header id="superior">
+        <div id="superior-left">
+          <button>
+            <img
+              class="treslinhas"
+              src="../assets/icons/barra superior/icon - tres linhas.svg"
+              alt="Abrir menu lateral"
+            />
+          </button>
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../assets/logo - engplay.png"
+              alt="Logo EngPlay - Ir para Início"
+            />
+          </a>
+        </div>
+
+        <form action="/buscar" method="GET">
+          <input
+            type="text"
+            name="pesquisa"
+            placeholder="Digite sua pesquisa..."
+          />
+          <button type="submit">
+            <img
+              src="../assets/icons/barra superior/icon - pesquisa.svg"
+              alt="Pesquisar"
+            />
+          </button>
+        </form>
+
+        <div id="icones-direita">
+          <a href="#">
+            <img
+              src="../assets/icons/barra superior/icon - notificacoes.svg"
+              alt="Notificações"
+              id="botao-tema"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="../assets/icons/barra superior/icon - conta.svg"
+              alt="Minha Conta"
+            />
+          </a>
+        </div>
+      </header>
+
+      <nav id="lateral">
+        <a href="../index.html">
+          <img
+            src="../assets/icons/barra lateral/icon - home.svg"
+            alt="barra lateral - home"
+            class="oculto"
+          />
+          <p>Home</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - turmas.svg"
+            alt="barra lateral - turmas"
+            class="oculto"
+          />
+          <p>Turmas</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - certificados.svg"
+            alt="barra lateral - certificados"
+            class="oculto"
+          />
+          <p>Certificações</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - banners.svg"
+            alt="barra lateral - banners"
+            class="oculto"
+          />
+          <p>Banners</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - assinaturas.svg"
+            alt="barra lateral - assinaturas"
+            class="oculto"
+          />
+          <p>Assinaturas</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - convites.svg"
+            alt="barra lateral - convites"
+            class="oculto"
+          />
+          <p>Convites</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - membros.svg"
+            alt="barra lateral - membros"
+            class="oculto"
+          />
+          <p>Membros</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - comentarios.svg"
+            alt="barra lateral - comentarios"
+            class="oculto"
+          />
+          <p>Comentarios</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - comunidade.svg"
+            alt="barra lateral - comunidade"
+            class="oculto"
+          />
+          <p>Comunidade</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - ranking.svg"
+            alt="barra lateral - ranking"
+            class="oculto"
+          />
+          <p>Ranking</p>
+        </a>
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - atendimento.svg"
+            alt="barra lateral - atendimento"
+            class="oculto"
+          />
+          <p>Atendimento</p>
+        </a>
+        <hr />
+        <a>
+          <img
+            src="../assets/icons/barra lateral/icon - cancelamento.svg"
+            alt="barra lateral - cancelamento"
+            class="oculto"
+          />
+          <p>Cancelamento</p>
+        </a>
+        <div id="icones-temas">
+          <img
+            id="icone-tema"
+            src="../assets/icons/barra superior/temas/tema_escuro.svg"
+            alt="Tema"
+          />
+        </div>
+      </nav>
+
+      <main id="conteudo">
+        <div class="coluna-central-de-conteudo">
+          <img
+            class="barra-de-progresso-img"
+            src="../assets/barra de preenchimento entre cada pagina/dark/pg - confirmacao.svg"
+            alt="Barra de Progresso 5/5"
+          />
+          <div class="cancelamento-agendado-texto">
+          <h2>Seu Cancelamento foi Agendado</h2>
+          <p>
+            Você ainda tem acesso total e irrestrito a todo conteúdo da EngPlay pelas próximas 72 horas, sem nenhuma cobrança adicional. Aproveite para rever uma aula ou baixar um material.
+          </p>
+          </div>
+        </div>
+          <div class="linha-separadora"></div>
+          <div class="coluna-central-de-conteudo">
+            <div class="cancelamento-feedback-texto">
+            <p>
+              Obrigado pelo seu feedback, [Nome do Aluno]. Ele é fundamental para nós. <br> 
+              Sua solicitação de cancelamento foi agendada e será efetivada em até 72 horas. <br>
+              Durante esse período, um de nossos especialistas entrará em contato para confirmar sua decisão e entender como podemos melhorar. Fique tranquilo, seu acesso a plataforma continua 100% liberado e sem custos adicionais para você aproveitar e rever qualquer conteúdo.
+            </p>
+            </div>
+            <h2>Seu Acesso a estes benefícios será encerrado</h2>
+          <ul class="lista-impacto">
+            <li class="impacto-bloco">
+              <div class="impacto-img">
+                <img
+                  src="../assets/imgs/img para Pagina - Confirmacao//img_progresso.png"
+                  alt="Arquivamento do Progresso"
+                />
+              </div>
+              <div class="impacto-texto">
+                <h3>Arquivamento do Seu Progresso:</h3>
+                <ul>
+                  <li>
+                    Todo o seu histórico de aprendizado será permanentemente arquivado, deixando de ser visível em sua conta.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="impacto-bloco">
+              <div class="impacto-img">
+                <img
+                  src="../assets/imgs/img para Pagina - Confirmacao/img_encerramento_comunidade.png"
+                  alt="Fim do Acesso à Comunidade"
+                />
+              </div>
+              <div class="impacto-texto">
+                <h3>Encerramento do Acesso à Comunidade:</h3>
+                <ul>
+                  <li>
+                    Seu contato com os especialistas e alunos no grupo VIP será interrompido.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="impacto-bloco">
+              <div class="impacto-img">
+                <img
+                  src="../assets/imgs/img para Pagina - Confirmacao/img_encerramento_suporte.png"
+                  alt="Suporte Encerrado"
+                />
+              </div>
+              <div class="impacto-texto">
+                <h3>Suporte de Especialistas Encerrado: </h3>
+                <ul>
+                  <li>
+                    O canal para tirar dúvidas com nossa equipe em até 24h será descontinuado para a sua conta.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="impacto-bloco">
+              <div class="impacto-img">
+                <img
+                  src="../assets/imgs/img para Pagina - Confirmacao/img_encerramento_conteudos.png"
+                  alt="Fim Das Atualizações de Conteúdos"
+                />
+              </div>
+              <div class="impacto-texto">
+                <h3>Fim das Atualizações de Conteúdo:</h3>
+                <ul>
+                  <li>
+                    Sua conta não será mais atualizada com novas aulas e materiais.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="impacto-bloco">
+              <div class="impacto-img">
+                <img
+                  src="../assets/imgs/img para Pagina - Confirmacao/img_encerramento_certificados.png"
+                  alt="Perda ao Direito Dos Certificados"
+                />
+              </div>
+              <div class="impacto-texto">
+                <h3>Perda do Direito ao Certificado:</h3>
+                <ul>
+                  <li>
+                    Você não será mais elegível para receber seu certificado, mesmo que complete todos os requisitos do curso. A chance de validar oficialmente seu aprendizado conosco será perdida.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="impacto-bloco">
+              <div class="impacto-img">
+                <img
+                  src="../assets/imgs/img para Pagina - Confirmacao/img_encerramento_condicao_especial.png"
+                  alt="Fim da Condicao Especial"
+                />
+              </div>
+              <div class="impacto-texto">
+                <h3>Perda da Sua Condição Especial:</h3>
+                <ul>
+                  <li>
+                    Você perderá este preço promocional para sempre. Uma futura assinatura será feita com o valor integral, sem o seu desconto atual garantido.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div id="button">
+            <a href="./sub-paginas/home.html">
+              <button>
+                Não quero perder tudo isso. Manter minha assinatura!
+              </button>
+            </a>
+
+            <a href="./avalicao_do_curso.html" id="link-confirmar-perdas">
+              <button id="confirmar-perdas-btn">
+                Estou ciente das perdas.
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>

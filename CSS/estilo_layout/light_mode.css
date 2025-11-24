@@ -1,0 +1,86 @@
+/* ------------------------------ */
+/*            LIGHT MODE          */
+/* ------------------------------ */
+
+body.light-mode {
+    background-color: #D1D1D6;
+    color: #222222; 
+}
+
+body.light-mode #conteudo {
+    background-color: #D1D1D6;
+    color: #222222;
+}
+
+body.light-mode #conteudo h2, 
+body.light-mode #conteudo h3, 
+body.light-mode #conteudo p {
+    color: #000;
+}
+
+body.light-mode .opcao-bloco {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+body.light-mode .opcao-bloco.selecionado {
+    border: 2px solid #1B365F;
+}
+
+/* Botões padrão */
+body.light-mode #button button {
+    background-color: #424242; 
+    color: #FFFFFF;
+    border: 1px solid #424242;
+    font-weight: bold;
+}
+
+/* Botão verde */
+body.light-mode #button a:first-child button {
+    color: #fff;
+    background: linear-gradient(to right, #424242, #424242 , #42c558 100%, #0be42f);
+    background-size: 200% 100%;
+    background-position: left center;
+   transition: background-position 0.3s ease;
+}
+
+body.light-mode #button a:first-child button:hover {
+    background-position: right center;
+}
+
+/* Botão vermelho */
+body.light-mode #button a:last-child button {
+    color: #fff;
+    background: linear-gradient(to left, #424242, #424242 , #bd2020 100%, #cf1818);
+    background-size: 200% 100%;
+    background-position: right center;
+    transition: background-position 0.4s ease; 
+}
+
+body.light-mode #button a:last-child button:hover {
+    background-position: left center;
+}
+
+/* Área de comentários */
+body.light-mode .comentario-caixa {
+    background-color: #666667;
+    color: #ffffff;
+}
+
+body.light-mode .comentario-caixa::placeholder {
+    color: #615f5f;
+}
+
+/* Contraste claro */
+.contraste-claro {
+    background-color: #FFFFFF; 
+    color: #222222;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contraste-claro button,
+.contraste-claro button img {
+    color: #222222;
+}

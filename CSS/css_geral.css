@@ -1,0 +1,122 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #2f353b;
+  color: white;
+  overflow: hidden;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+#conteudo {
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  right: 0;
+  bottom: 0;
+  padding: 40px 30px;
+  background-color: #2f353b;
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  text-align: center;
+}
+
+.coluna-central-de-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* ===== TEXTO ===== */
+#conteudo h2 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#conteudo p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* ===== BOTÕES ===== */
+#button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+}
+
+#button a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+
+#button button {
+  border: none;
+  padding: 14px 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s ease-out;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  min-width: fit-content;
+}
+/* ========================== */
+/* RESPONSIVIDADE */
+/* ========================== */
+
+@media (max-width: 768px) {
+
+  #conteudo {
+    top: 70px;
+    left: 0 !important;
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p, li, span {
+    font-size: 16px;
+  }
+
+  #button {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #button button {
+    font-size: 15px;
+    padding: 14px;
+    width: 100%;
+  }
+
+}

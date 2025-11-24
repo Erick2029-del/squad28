@@ -1,0 +1,57 @@
+/* ------------------------------ */
+/*            DARK MODE           */
+/* ------------------------------ */
+
+body.dark-mode {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+body.dark-mode #conteudo {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+body.dark-mode .comentario-caixa {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    border: 1px solid #444;
+}
+
+body.dark-mode .comentario-caixa::placeholder {
+    color: #BBBBBB;
+}
+
+/* Botão verde no DARK MODE → inicia BRANCO */
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode #conteudo {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark-mode .cancel-keep {
+background: linear-gradient(to right, #ffffff, #ffffff , #42c558 100%, #0be42f);
+  background-size: 200% 100%;
+  background-position: left center;
+  color: rgb(0, 0, 0);
+}
+
+body.dark-mode .cancel-keep:hover {
+  background-position: right center;
+}
+
+
+body.dark-mode .cancel-confirm {
+ background: linear-gradient(to left, #ffffff, #ffffff , #bd2020 100%, #cf1818);
+  background-size: 200% 100%;
+  background-position: right center;
+  color: black;
+}
+
+body.dark-mode .cancel-confirm:hover {
+  background-position: left center;
+}

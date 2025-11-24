@@ -1,0 +1,217 @@
+/* ===== BARRA SUPERIOR ===== */
+#superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #17336a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 1000;
+    gap: 20px;
+    border-bottom: 2px solid #7a7979; 
+}
+
+#superior-left {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    flex: 0 0 auto;
+}
+
+#superior-left button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#superior-left img {
+    display: block;
+}
+
+#superior-left img.logo {
+    width: 150px;
+    display: block;
+}
+
+
+#superior-left button img.treslinhas {
+    width: 35px;
+    display: block;
+}
+
+/* ===== FORMULÁRIO DE BUSCA (CENTRO) ===== */
+#superior form {
+    flex: 1;
+    max-width: 850px;
+    display: flex;
+    align-items: center;
+    background-color: #52525b;
+    border-radius: 25px;
+    padding: 6px 14px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+#superior form:focus-within {
+    background: #3d4652;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.8);
+}
+
+#superior form input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px;
+}
+
+#superior form input::placeholder {
+    color: #aaa;
+    transition: opacity 0.3s ease;
+}
+
+#superior form input:focus::placeholder {
+    opacity: 0.5;
+}
+
+#superior form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+
+#superior form button:hover {
+    transform: scale(1.2);
+}
+
+#superior form button img {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+#icones-direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex: 0 0 auto;
+}
+
+#icones-direita a img {
+    height: 32px;
+    cursor: pointer;
+    display: block;
+}
+
+/* ============================
+   BARRA LATERAL (OTIMIZADA)
+   ============================ */
+
+#lateral {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    
+    width: 190px; 
+    
+    height: calc(100% - 70px);
+    background: linear-gradient(to bottom, #0A1B40, #142b6f);
+
+    padding: 20px 10px; 
+    
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+#lateral a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #b0b0b0;
+    text-decoration: none;
+
+    padding: 12px 10px; 
+    
+    border-radius: 5px;
+    transition: background 0.2s, color 0.2s, gap 0.3s ease;
+    white-space: nowrap;
+}
+
+#lateral a img {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0; 
+}
+
+#lateral a p {
+    margin: 0;
+    transition: opacity 0.25s ease, width 0.25s ease;
+    opacity: 1;
+    width: auto;
+    
+    font-size: 14px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#lateral a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#icones-temas {
+    display: flex;            
+    justify-content: center;  
+    width: 100%;              
+    margin-top: 15px;         
+    cursor: pointer;          
+}
+
+/* ============================
+   ESTADO RETRAÍDO
+   ============================ */
+
+#lateral.retraida {
+    width: 80px;
+    padding: 20px 0;
+}
+
+body.sidebar-retraida #conteudo {
+    left: 80px;
+}
+
+#lateral.retraida a {
+    justify-content: center;
+    gap: 0;
+}
+
+#lateral.retraida a p {
+    opacity: 0;
+    width: 0;
+    pointer-events: none;
+}
+
+#icone-tema {
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+#lateral.retraida #icone-tema {
+    transform: scale(0.5);
+}

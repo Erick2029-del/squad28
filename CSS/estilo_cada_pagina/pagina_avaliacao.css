@@ -1,0 +1,78 @@
+.avaliacao-curso {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.avaliacao-curso h2 {
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.avaliacao-texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.avaliacao-texto h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.avaliacao-texto p {
+    margin-bottom: 20px;
+}
+
+.avaliacao-estrelas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+}
+
+.estrela-vazia {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.estrela-vazia:hover {
+    transform: scale(1.2);
+}
+
+.comentario-caixa {
+    width: 100%;
+    height: 160px;
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    resize: vertical;
+    color: #e0e0e0;
+    text-align: center;
+    line-height: 120px;
+    transition: text-align 0.3s ease-in-out, line-height 0.3s ease-in-out;
+}
+
+.comentario-caixa:focus {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.comentario-caixa::placeholder {
+    text-align: center;
+    color: #999;
+}
+
+.comentario-caixa:focus::placeholder {
+    color: transparent; 
+}
