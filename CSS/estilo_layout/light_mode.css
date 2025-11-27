@@ -1,26 +1,26 @@
 /* ------------------------------ */
-/*            LIGHT MODE          */
+/*            DARK MODE alterado          */
 /* ------------------------------ */
 
 body.light-mode {
-    background-color: #D1D1D6;
+    background-color: #1E1E1E;
     color: #222222; 
 }
 
 body.light-mode #conteudo {
-    background-color: #D1D1D6;
-    color: #222222;
+    background-color: #1E1E1E;
+    color: #D1D1D6;
 }
 
 body.light-mode #conteudo h2, 
 body.light-mode #conteudo h3, 
 body.light-mode #conteudo p {
-    color: #000;
+    color: #D1D1D6;
 }
 
 body.light-mode .opcao-bloco {
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
+    background-color: #5A5A5A;
+    border: 1px solid #5A5A5A;
 }
 
 body.light-mode .opcao-bloco.selecionado {
@@ -29,16 +29,16 @@ body.light-mode .opcao-bloco.selecionado {
 
 /* Botões padrão */
 body.light-mode #button button {
-    background-color: #424242; 
+    background-color: #D1D1D6; 
     color: #FFFFFF;
-    border: 1px solid #424242;
+    border: 1px solid #1E1E1E;
     font-weight: bold;
 }
 
 /* Botão verde */
 body.light-mode #button a:first-child button {
-    color: #fff;
-    background: linear-gradient(to right, #424242, #424242 , #42c558 100%, #0be42f);
+    color: #000000;
+    background: linear-gradient(to right, #D1D1D6, #D1D1D6 , #42c558 100%, #0be42f);
     background-size: 200% 100%;
     background-position: left center;
    transition: background-position 0.3s ease;
@@ -50,8 +50,8 @@ body.light-mode #button a:first-child button:hover {
 
 /* Botão vermelho */
 body.light-mode #button a:last-child button {
-    color: #fff;
-    background: linear-gradient(to left, #424242, #424242 , #bd2020 100%, #cf1818);
+    color: #000000;
+    background: linear-gradient(to left, #D1D1D6, #D1D1D6 , #bd2020 100%, #cf1818);
     background-size: 200% 100%;
     background-position: right center;
     transition: background-position 0.4s ease; 
@@ -63,12 +63,12 @@ body.light-mode #button a:last-child button:hover {
 
 /* Área de comentários */
 body.light-mode .comentario-caixa {
-    background-color: #666667;
+    background-color: z#6666679c;
     color: #ffffff;
 }
 
 body.light-mode .comentario-caixa::placeholder {
-    color: #615f5f;
+    color: #D1D1D6;
 }
 
 /* Contraste claro */
@@ -83,4 +83,14 @@ body.light-mode .comentario-caixa::placeholder {
 .contraste-claro button,
 .contraste-claro button img {
     color: #222222;
+}
+
+.impacto-texto{
+  color: #D1D1D6;
+}
+
+#termos-check,
+#perda-check
+{color: #D1D1D6;
+
 }

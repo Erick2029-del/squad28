@@ -1,17 +1,40 @@
 /* ------------------------------ */
-/*            DARK MODE           */
+/*            LIGHT MODE    alterado       */
 /* ------------------------------ */
 
 body.dark-mode {
-    background-color: #1E1E1E;
+    background-color: #D1D1D6;
     color: #FFFFFF;
 }
 
+body.dark-mode .opcao-bloco {
+    background-color: #5A5A5A;
+    border: 1px solid #5A5A5A;
+}
+/* Conteúdo */
 body.dark-mode #conteudo {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
+    background-color: #D1D1D6;
+    color: #1E1E1E;
 }
 
+body.dark-mode #conteudo h2, 
+body.dark-mode #conteudo h3, 
+body.dark-mode #conteudo p {
+    color: #1E1E1E;
+}
+
+
+body.dark-mode .opcao-bloco.selecionado {
+    border: 2px solid #1B365F;
+}
+
+body.dark-mode #conteudo .opcao-bloco p,
+body.dark-mode #conteudo .opcao-bloco h3{
+  color:#D1D1D6 ;
+}
+
+
+/* Caixa de comentários */
 body.dark-mode .comentario-caixa {
     background-color: #2A2A2A;
     color: #FFFFFF;
@@ -22,36 +45,44 @@ body.dark-mode .comentario-caixa::placeholder {
     color: #BBBBBB;
 }
 
-/* Botão verde no DARK MODE → inicia BRANCO */
-body.dark-mode {
-  background-color: #1f1f1f;
-  color: #ffffff;
+/* ------------------------------ */
+/*        BOTÕES (DARK MODE)     */
+/* ------------------------------ */
+
+/* Botões padrão */
+body.dark-mode #button button {
+    background-color: #2b2b2b;
+    color: #FFFFFF;
+    border: 1px solid #1E1E1E;
+    font-weight: bold;
 }
 
-body.dark-mode #conteudo {
-  background-color: #1f1f1f;
-  color: white;
+/* Botão verde (primeiro botão) */
+body.dark-mode #button a:first-child button {
+    background: linear-gradient(to right, #1E1E1E, #1E1E1E, #42c558 100%, #0be42f);
+    background-size: 200% 100%;
+    background-position: left center;
+    color: #D1D1D6;
+    transition: background-position 0.3s ease;
 }
 
-body.dark-mode .cancel-keep {
-background: linear-gradient(to right, #ffffff, #ffffff , #42c558 100%, #0be42f);
-  background-size: 200% 100%;
-  background-position: left center;
-  color: rgb(0, 0, 0);
+body.dark-mode #button a:first-child button:hover {
+    background-position: right center;
 }
 
-body.dark-mode .cancel-keep:hover {
-  background-position: right center;
+/* Botão vermelho (segundo botão) — CORRIGIDO */
+body.dark-mode #button a:last-child button {
+    background: linear-gradient(to left, #1E1E1E, #1E1E1E, #bd2020 100%, #cf1818);
+    background-size: 200% 100%;
+    background-position: right center;
+    color: #D1D1D6; /* texto preto */
+    transition: background-position 0.3s ease;
 }
 
-
-body.dark-mode .cancel-confirm {
- background: linear-gradient(to left, #ffffff, #ffffff , #bd2020 100%, #cf1818);
-  background-size: 200% 100%;
-  background-position: right center;
-  color: black;
+body.dark-mode #button a:last-child button:hover {
+    background-position: left center;
 }
 
-body.dark-mode .cancel-confirm:hover {
-  background-position: left center;
+.custom-checkbox{
+  color: #1E1E1E;
 }

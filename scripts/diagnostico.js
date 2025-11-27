@@ -81,10 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkPerda = document.getElementById('perda-check');
     const btnConfirmar = document.getElementById('confirmar-perdas-btn');
     const linkConfirmar = document.getElementById('link-confirmar-perdas');
+    const verificarTema = document.getElementById('tema-claro-css');
 
     if (blocosOpcoes.length && checkTermos && checkPerda && btnConfirmar && linkConfirmar) {
         
-        const imgNaoMarcado = "../assets/icons/icones para Pagina - Diagnostico/icon - check box --- nao marcado.svg";
+        const imgNaoMarcado = "../assets/icons/icones para Pagina - Diagnostico/icon - check box --- nao marcado --- Light mode.svg";
         const imgMarcado = "../assets/icons/icones para Pagina - Diagnostico/icon - check box --- marcado.svg";
 
         checkTermos.dataset.checked = 'false';
@@ -131,5 +132,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
 
 });
